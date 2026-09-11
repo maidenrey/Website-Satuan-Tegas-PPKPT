@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satgas PPKPT — Institut Teknologi Statistika dan Bisnis Muhammadiyah Semarang (ITESA)</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Kanal resmi digital Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual di Perguruan Tinggi (Satgas PPKPT) ITESA Muhammadiyah Semarang. Ruang aman, rahasia, dan berpihak pada korban.">
+  <meta name="keywords" content="PPKPT ITESA, Satgas PPKS ITESA Muhammadiyah Semarang, Lapor Kekerasan Seksual Kampus, Perlindungan Mahasiswa, Permendikbudristek 30 2021">
+  <meta name="theme-color" content="#1B5ED1">
+  <meta property="og:title" content="Satgas PPKPT ITESA Muhammadiyah Semarang">
+  <meta property="og:description" content="Layanan edukasi, pencegahan, dan pendampingan pelaporan aman serta rahasia bagi sivitas akademika ITESA Muhammadiyah Semarang.">
+  <meta property="og:image" content="assets/Logo PPKPT ITESA.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/Logo PPKPT ITESA.jpeg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. TOP EMERGENCY BANNER
+       ======================================================================== -->
+  <aside class="emergency-topbar" aria-label="Informasi Kontak Darurat">
+    <div class="container topbar-content">
+      <div class="topbar-row">
+        <span class="topbar-badge">Kanal Aman</span>
+        <span class="topbar-text">Hotline Darurat Satgas PPKPT:</span>
+        <a href="https://wa.me/6282134567890?text=Halo%20Satgas%20PPKPT%20ITESA%2C%20saya%20membutuhkan%20informasi%20atau%20bantuan%20darurat." target="_blank" rel="noopener noreferrer" class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          WA 0821-3456-7890
+        </a>
+        <span class="topbar-divider">•</span>
+        <span class="topbar-note">Kerahasiaan 100% Dilindungi & Bebas Biaya</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       2. HEADER & NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <!-- Brand & Logo -->
+      <a href="#beranda" class="navbar-brand" aria-label="Beranda Satgas PPKPT ITESA">
+        <img src="assets/Logo PPKPT ITESA.jpeg" alt="Logo Satgas PPKPT ITESA" class="brand-logo" width="36" height="36">
+        <div class="brand-info">
+          <span class="brand-title">SATGAS PPKPT</span>
+          <span class="brand-subtitle">ITESA Muhammadiyah Semarang</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="navbar-nav" aria-label="Navigasi Utama">
+        <div class="nav-item">
+          <a href="#beranda" class="nav-link active">Beranda</a>
+        </div>
+
+        <!-- Dropdown: Tentang Satgas -->
+        <div class="nav-item">
+          <a href="#tentang" class="nav-link">
+            Tentang Kami
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#tentang-profil" class="dropdown-item" onclick="switchAboutTab('profil')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              Profil & Tim Satgas
+            </a>
+            <a href="#tentang-struktur" class="dropdown-item" onclick="switchAboutTab('struktur')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              Struktur Organisasi
+            </a>
+            <a href="#tentang-tugas" class="dropdown-item" onclick="switchAboutTab('tugas')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+              Tugas & Wewenang
+            </a>
+            <a href="#tentang-prinsip" class="dropdown-item" onclick="switchAboutTab('prinsip')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              Prinsip & Dasar Hukum
+            </a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="#alur-pelaporan" class="nav-link">Alur Pelaporan</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="#layanan" class="nav-link">Layanan</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="#unduhan" class="nav-link">Informasi & Unduhan</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="#faq" class="nav-link">FAQ</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="#kontak" class="nav-link">Hubungi Kami</a>
+        </div>
+      </nav>
+
+      <!-- CTA Buttons & Hamburger -->
+      <div class="navbar-actions">
+        <a href="#laporkan" class="btn-report-nav" id="btnNavbarReport">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          Laporkan Sekarang
+        </a>
+
+        <!-- Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Navigasi Mobile">
+    <div class="drawer-header">
+      <div class="brand-info">
+        <span class="brand-title">SATGAS PPKPT</span>
+        <span class="brand-subtitle">ITESA Muhammadiyah Semarang</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Tutup Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="#beranda" class="drawer-link drawer-item-click">Beranda</a>
+      
+      <div class="drawer-link" style="cursor: pointer;" onclick="toggleMobileSubmenu()">
+        <span>Tentang Satgas</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="drawer-submenu" id="mobileSubmenu">
+        <a href="#tentang" class="drawer-sublink drawer-item-click" onclick="switchAboutTab('profil')">• Profil & Tim Satgas</a>
+        <a href="#tentang" class="drawer-sublink drawer-item-click" onclick="switchAboutTab('struktur')">• Struktur Organisasi</a>
+        <a href="#tentang" class="drawer-sublink drawer-item-click" onclick="switchAboutTab('tugas')">• Tugas & Wewenang</a>
+        <a href="#tentang" class="drawer-sublink drawer-item-click" onclick="switchAboutTab('prinsip')">• Prinsip & Dasar Hukum</a>
+      </div>
+
+      <a href="#alur-pelaporan" class="drawer-link drawer-item-click">Alur Pelaporan</a>
+      <a href="#layanan" class="drawer-link drawer-item-click">Layanan Satgas</a>
+      <a href="#unduhan" class="drawer-link drawer-item-click">Informasi & Unduhan</a>
+      <a href="#faq" class="drawer-link drawer-item-click">FAQ / Tanya Jawab</a>
+      <a href="#kontak" class="drawer-link drawer-item-click">Hubungi Kami</a>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="#laporkan" class="btn btn-accent btn-lg drawer-item-click" style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Laporkan Sekarang
+      </a>
+      <a href="https://wa.me/6282134567890" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%;">
+        Chat WhatsApp Satgas
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       3. HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="beranda">
+    <div class="hero-bg-shapes">
+      <div class="hero-shape-1"></div>
+      <div class="hero-shape-2"></div>
+    </div>
+
+    <div class="container hero-content">
+
+      <h1 class="hero-title">
+        Wujudkan Kampus <span class="highlight">Aman, Inklusif</span> & Bebas Kekerasan Seksual
+      </h1>
+
+      <p class="hero-subtitle">
+        Satgas PPKPT ITESA Muhammadiyah Semarang hadir mendampingi, mengayomi, dan melindungi seluruh mahasiswa, dosen, dan tenaga kependidikan dengan prinsip kerahasiaan penuh, keadilan, dan tanpa diskriminasi.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#laporkan" class="btn btn-accent btn-lg" id="heroBtnReport">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          Laporkan Sekarang
+        </a>
+        <a href="#alur-pelaporan" class="btn btn-primary btn-lg">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          Pelajari Alur Pelaporan
+        </a>
+        <a href="#layanan" class="btn btn-outline btn-lg">
+          Katalog Layanan
+        </a>
+      </div>
+    </div>
+  </section>
+<br>
+<br>
+  <!-- ========================================================================
+       4. QUICK ACCESS SECTION
+       ======================================================================== -->
+  <section class="quick-access-section" aria-label="Akses Cepat Layanan">
+    <div class="container">
+      <div class="quick-cards-grid">
+        <div class="quick-card">
+          <div class="quick-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3>Alur Pelaporan SOP</h3>
+          <p>Pelajari 5 tahapan penanganan kasus sejak aduan masuk hingga pendampingan & pemulihan.</p>
+          <a href="#alur-pelaporan" class="quick-card-link">
+            Lihat Infografis Alur
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="quick-card">
+          <div class="quick-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <h3>Kontak Bantuan Darurat</h3>
+          <p>Hubungi WhatsApp Satgas PPKPT secara langsung untuk konsultasi awal atau situasi mendesak.</p>
+          <a href="https://wa.me/6282134567890" target="_blank" rel="noopener noreferrer" class="quick-card-link">
+            Chat WhatsApp
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="quick-card">
+          <div class="quick-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
+          <h3>FAQ &amp; Panduan</h3>
+          <p>Temukan jawaban atas pertanyaan umum seputar mekanisme pelaporan, kerahasiaan identitas, dan hak-hak pelapor.</p>
+          <a href="#faq" class="quick-card-link">
+            Lihat FAQ
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="quick-card">
+          <div class="quick-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </div>
+          <h3>Pusat Regulasi & Buku Saku</h3>
+          <p>Unduh modul edukasi, aturan Permendikbudristek 30/2021, dan pedoman pencegahan kekerasan.</p>
+          <a href="#unduhan" class="quick-card-link">
+            Unduh Dokumen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. TENTANG SATGAS PPKPT SECTION (TABS: PROFIL, STRUKTUR, TUGAS, PRINSIP)
+       ======================================================================== -->
+  <section class="about-section" id="tentang">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Mengenal Satuan Tugas</span>
+        <h2 class="section-title">Tentang Satgas PPKPT ITESA</h2>
+        <p class="section-subtitle">
+          Organ resmi independen di lingkungan Institut Teknologi Statistika dan Bisnis Muhammadiyah Semarang yang dibentuk untuk menegakkan pencegahan dan penanganan kekerasan seksual.
+        </p>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="tab-nav" role="tablist">
+        <button class="tab-btn active" role="tab" aria-selected="true" data-tab="profil" onclick="switchAboutTab('profil')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Profil & Tim
+        </button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="struktur" onclick="switchAboutTab('struktur')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          Struktur Organisasi
+        </button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="tugas" onclick="switchAboutTab('tugas')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+          Tugas & Wewenang
+        </button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="prinsip" onclick="switchAboutTab('prinsip')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          Prinsip & Dasar Hukum
+        </button>
+      </div>
+
+      <!-- Tab Content 1: Profil -->
+      <div class="tab-content-panel active" id="tab-profil" role="tabpanel">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag" style="background: var(--accent-soft); color: #92400E;">Komitmen Institusi</span>
+            <h3>Mewujudkan Kampus Merdeka dari Segala Bentuk Kekerasan</h3>
+            <p>
+              Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual di Perguruan Tinggi (Satgas PPKPT) ITESA Muhammadiyah Semarang dibentuk berdasarkan mandat Permendikbudristek No. 30 Tahun 2021 dan Keputusan Rektor ITESA Muhammadiyah Semarang.
+            </p>
+            <p>
+              Keanggotaan Satgas terdiri dari perwakilan unsur <strong>Dosen</strong>, <strong>Tenaga Kependidikan</strong>, dan <strong>Mahasiswa</strong> yang telah melalui proses seleksi independen dan pelatihan penanganan kasus berperspektif korban.
+            </p>
+            <div class="vision-card">
+              <h4>Visi Utama Kami</h4>
+              <p>Mewujudkan lingkungan akademik ITESA Muhammadiyah Semarang yang bermartabat, humanis, aman dari kekerasan seksual, serta menjunjung tinggi nilai-nilai keislaman dan kemuhammadiyahan.</p>
+            </div>
+          </div>
+
+          <div class="about-features-card">
+            <div class="about-feature-item">
+              <div class="af-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div class="af-text">
+                <h4>Keterwakilan Multidisiplin</h4>
+                <p>Melibatkan dosen hukum & psikologi, staf kemahasiswaan, serta mahasiswa terpilih untuk pendekatan menyeluruh.</p>
+              </div>
+            </div>
+
+            <div class="about-feature-item">
+              <div class="af-icon" style="background: var(--accent-soft); color: #B45309;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <div class="af-text">
+                <h4>Kode Etik Kerahasiaan Ketat</h4>
+                <p>Seluruh data saksi, bukti, dan kronologi kasus disimpan dalam protokol enkripsi tertutup yang tidak dipublikasikan.</p>
+              </div>
+            </div>
+
+            <div class="about-feature-item">
+              <div class="af-icon" style="background: var(--color-success-bg); color: var(--color-success);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <div class="af-text">
+                <h4>Akses Bebas Biaya Bagi Semua Sivitas</h4>
+                <p>Seluruh tahapan konseling, konsultasi hukum, hingga pendampingan medis disediakan tanpa memungut biaya.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Struktur Organisasi (Interactive Hierarchy Visual) -->
+      <div class="tab-content-panel" id="tab-struktur" role="tabpanel">
+        <div class="org-chart-wrapper">
+          <!-- Top Level: Pembina -->
+          <div class="org-node org-node-pembina">
+            <div class="org-role">Pembina & Penanggung Jawab</div>
+            <div class="org-name">Rektor ITESA Muhammadiyah Semarang</div>
+            <div class="org-meta">Pimpinan Institusi Kampus</div>
+          </div>
+          
+          <div class="org-connector"></div>
+
+          <!-- Level 2: Ketua & Sekretaris -->
+          <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+            <div class="org-node org-node-leader">
+              <div class="org-role">Ketua Satgas PPKPT</div>
+              <div class="org-name">Dosen / Tenaga Ahli Terpilih</div>
+              <div class="org-meta">Koordinator Utama Penanganan Kasus</div>
+            </div>
+            <div class="org-node org-node-secretary">
+              <div class="org-role">Sekretaris Satgas</div>
+              <div class="org-name">Unsur Tenaga Kependidikan</div>
+              <div class="org-meta">Administrasi & Pencatatan Kasus</div>
+            </div>
+          </div>
+
+          <div class="org-connector"></div>
+
+          <!-- Level 3: Divisi Fungsional -->
+          <div class="org-row-divisions">
+            <div class="org-div-card">
+              <h4>Divisi Pencegahan & Edukasi</h4>
+              <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+                Bertanggung jawab dalam sosialisasi, modul psikoedukasi, seminar anti-kekerasan seksual, dan kampanye kampus ramah perempuan.
+              </p>
+              <div class="org-member-list">
+                <div class="org-member-item">
+                  <span>Koordinator Divisi</span>
+                  <span class="org-member-role-badge">Unsur Dosen</span>
+                </div>
+                <div class="org-member-item">
+                  <span>Staf Edukasi Kampanye</span>
+                  <span class="org-member-role-badge">Unsur Mahasiswa</span>
+                </div>
+                <div class="org-member-item">
+                  <span>Fasilitator Modul</span>
+                  <span class="org-member-role-badge">Unsur Mahasiswa</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="org-div-card">
+              <h4>Divisi Penanganan & Pendampingan</h4>
+              <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+                Bertanggung jawab memverifikasi laporan masuk, investigasi awal, penyediaan konseling psikologis, serta pendampingan hukum dan pemulihan.
+              </p>
+              <div class="org-member-list">
+                <div class="org-member-item">
+                  <span>Koordinator Penanganan</span>
+                  <span class="org-member-role-badge">Unsur Dosen</span>
+                </div>
+                <div class="org-member-item">
+                  <span>Konselor / Pendamping</span>
+                  <span class="org-member-role-badge">Unsur Tendik</span>
+                </div>
+                <div class="org-member-item">
+                  <span>Pendamping Saksi/Korban</span>
+                  <span class="org-member-role-badge">Unsur Mahasiswa</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3: Tugas dan Wewenang -->
+      <div class="tab-content-panel" id="tab-tugas" role="tabpanel">
+        <div class="tasks-grid">
+          <div class="task-card">
+            <div class="task-card-header">
+              <div class="task-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <h3>Tugas Pokok Satgas PPKPT</h3>
+            </div>
+            <ul class="task-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Membantu Pemimpin Perguruan Tinggi menyusun pedoman teknis pencegahan dan penanganan kekerasan seksual di ITESA.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Menerima, mendata, dan menindaklanjuti laporan aduan kekerasan seksual dari sivitas akademika secara rahasia.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Melakukan pemeriksaan dan asesmen kebutuhan terhadap terlapor, korban, saksi, dan pihak terkait.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Menyediakan layanan pendampingan psikologis, medis, dan advokasi hukum bagi korban kekerasan.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Menyelenggarakan program edukasi, sosialisasi, dan pelatihan pencegahan kekerasan seksual secara berkala.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="task-card">
+            <div class="task-card-header">
+              <div class="task-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3>Wewenang Satgas PPKPT</h3>
+            </div>
+            <ul class="task-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Memanggil dan meminta keterangan dari korban, saksi, terlapor, dan pihak-pihak terkait dalam investigasi.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Mengumpulkan dokumen, bukti rekaman, bukti digital, dan informasi relevan penunjang penyelidikan kasus.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Mengeluarkan rekomendasi perlindungan sementara bagi korban kepada pimpinan kampus selama proses pemeriksaan.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Menyusun dan menyampaikan kesimpulan serta rekomendasi sanksi administratif/akademik kepada Rektor ITESA.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Bekerja sama dengan instansi eksternal (psikolog berlisensi, rumah sakit, LPSK, kepolisian) jika diperlukan.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 4: Prinsip & Dasar Hukum -->
+      <div class="tab-content-panel" id="tab-prinsip" role="tabpanel">
+        <div class="principles-grid">
+          <div class="principle-card">
+            <div class="principle-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h4>Kerahasiaan Ketat</h4>
+            <p>Identitas korban, pelapor, dan saksi dijamin kerahasiaannya serta tidak dibuka kepada publik dalam kondisi apa pun.</p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <h4>Kepentingan Terbaik Korban</h4>
+            <p>Memprioritaskan pemulihan kondisi fisik, mental, rasa aman, dan keberlanjutan studi atau karier korban di kampus.</p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4>Keadilan & Non-Diskriminasi</h4>
+            <p>Penanganan kasus dilakukan secara objektif, bebas dari relasi kuasa jabatan, status sosial, maupun latar belakang individu.</p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            </div>
+            <h4>Akuntabilitas & Kehati-hatian</h4>
+            <p>Setiap putusan dan rekomendasi didasarkan pada pembuktian yang cermat, transparan, serta dapat dipertanggungjawabkan secara hukum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. ALUR PELAPORAN (INFOGRAFIS INTERAKTIF)
+       ======================================================================== -->
+  <section class="flow-section" id="alur-pelaporan">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Transparan & Terstruktur</span>
+        <h2 class="section-title">Alur Penanganan Kasus Satgas PPKPT</h2>
+        <p class="section-subtitle">
+          Prosedur Operasional Standar (SOP) resmi penanganan kasus di lingkungan ITESA Muhammadiyah Semarang untuk menjamin rasa aman pelapor di setiap tahap.
+        </p>
+      </div>
+
+      <!-- Step Timeline Grid -->
+      <div class="flow-timeline">
+        <div class="flow-step-card">
+          <div class="step-number">1</div>
+          <h4>Penerimaan Aduan</h4>
+          <p>Laporan masuk melalui formulir resmi online, WhatsApp Satgas, atau konsultasi langsung di sekretariat.</p>
+        </div>
+
+        <div class="flow-step-card">
+          <div class="step-number">2</div>
+          <h4>Asesmen & Verifikasi</h4>
+          <p>Satgas menelaah bukti awal, menilai kebutuhan darurat korban, dan menerbitkan kode tiket identitas.</p>
+        </div>
+
+        <div class="flow-step-card">
+          <div class="step-number">3</div>
+          <h4>Perlindungan Korban</h4>
+          <p>Pemberian pendampingan psikologis, pengamanan ruang belajar/kerja, serta perlindungan dari intimidasi.</p>
+        </div>
+
+        <div class="flow-step-card">
+          <div class="step-number">4</div>
+          <h4>Pemeriksaan & Sidang</h4>
+          <p>Klarifikasi saksi dan terlapor secara berimbang tanpa mempertemukan korban dengan terlapor.</p>
+        </div>
+
+        <div class="flow-step-card">
+          <div class="step-number">5</div>
+          <h4>Rekomendasi & Pemulihan</h4>
+          <p>Penyampaian rekomendasi sanksi kepada Rektorat dan pengawalan pemulihan kondisi korban hingga tuntas.</p>
+        </div>
+      </div>
+
+      <!-- After Report Banner -->
+      <div class="after-report-box">
+        <div class="after-report-text">
+          <h3>Apa yang terjadi setelah Anda melapor?</h3>
+          <p>
+            Tim Satgas akan segera menghubungi Anda melalui kontak yang disepakati dalam waktu maksimal 1x24 jam kerja. Anda berhak menentukan apakah ingin didampingi keluarga, teman terpercaya, atau konselor selama proses berlangsung.
+          </p>
+        </div>
+        <div class="after-report-action">
+          <a href="#unduhan" class="btn btn-accent btn-lg">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Unduh Dokumen SOP (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. LAYANAN SATGAS PPKPT
+       ======================================================================== -->
+  <section class="services-section" id="layanan">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Layanan Terpadu</span>
+        <h2 class="section-title">Layanan Pendampingan Sivitas Akademika</h2>
+        <p class="section-subtitle">
+          Kami menyediakan berbagai bentuk layanan perlindungan dan edukasi yang dirancang untuk mendukung kesehatan mental, fisik, dan keadilan hukum korban.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          </div>
+          <h3>Psikoedukasi & Pelatihan</h3>
+          <p>Program edukasi pencegahan kekerasan berbasis gender, sosialisasi kesadaran relasi sehat, dan pelatihan <i>bystander intervention</i>.</p>
+          <div class="service-features">
+            <div class="service-feature-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Sosialisasi saat Ospek & PKKMB Mahasiswa Baru</span>
+            </div>
+            <div class="service-feature-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Buku saku digital pencegahan kekerasan</span>
+            </div>
+          </div>
+          <a href="#unduhan" class="btn btn-outline btn-sm">Pelajari Materi</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <h3>Konseling Psikologis</h3>
+          <p>Dukungan psikologis awal (<i>Psychological First Aid</i>) oleh tenaga konselor profesional untuk meredakan trauma emosional dan depresi.</p>
+          <div class="service-features">
+            <div class="service-feature-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Sesi tatap muka di ruang konseling tertutup</span>
+            </div>
+            <div class="service-feature-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Dukungan konseling daring aman (opsional)</span>
+            </div>
+          </div>
+          <a href="https://wa.me/6282134567890?text=Halo%20Satgas%20PPKPT%20ITESA%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20konseling." target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Konsultasi Konseling</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Konsultasi Hukum</h3>
+          <p>Penjelasan hak-hak hukum korban, pemahaman pasal TPKS dan regulasi kampus, serta opsi perlindungan hukum yang dapat ditempuh.</p>
+          <div class="service-features">
+            <div class="service-feature-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Advokasi peraturan akademik kampus</span>
+            </div>
+            <div class="service-feature-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Kajian regulasi Permendikbudristek No. 30/2021</span>
+            </div>
+          </div>
+          <a href="#kontak" class="btn btn-outline btn-sm">Ajukan Konsultasi</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3>Layanan Pendampingan Terpadu</h3>
+          <p>Mendampingi korban dalam setiap proses klarifikasi di kampus, koordinasi fleksibilitas perkuliahan/tugas, serta pemulihan lingkungan.</p>
+          <div class="service-features">
+            <div class="service-feature-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Perlindungan dari ancaman nilai atau sanksi</span>
+            </div>
+            <div class="service-feature-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Ruang mediasi yang adil dan aman</span>
+            </div>
+          </div>
+          <a href="#laporkan" class="btn btn-outline btn-sm">Ajukan Pendampingan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. FORMULIR PELAPORAN (SECTION 8.5)
+       ======================================================================== -->
+  <section class="report-section" id="laporkan">
+    <div class="container">
+      <div class="report-box">
+        <div class="report-banner-trust">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>Pusat Pelaporan Resmi: Kerahasiaan Anda Dilindungi Sepenuhnya Oleh Hukum & Kebijakan Kampus</span>
+        </div>
+
+        <div class="report-box-grid">
+          <div class="report-info-col">
+            <span class="section-tag" style="background: var(--accent-soft); color: #92400E;">Kanal Pengaduan</span>
+            <h3>Jangan Ragu Bersuara, Kami Bersama Anda</h3>
+            <p>
+              Setiap laporan ditangani secara hati-hati, bebas intimidasi, dan hanya dapat diakses oleh tim Satgas terverifikasi. Anda dapat memilih untuk melaporkan dengan identitas resmi maupun secara <strong>anonim</strong>.
+            </p>
+
+            <div class="report-channels">
+              <div class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                </div>
+                <div>
+                  <div class="channel-title">Formulir Pelaporan Online</div>
+                  <div class="channel-desc">Isi kronologi secara mandiri melalui formulir online resmi Satgas PPKPT ITESA.</div>
+                </div>
+              </div>
+
+              <div class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <div class="channel-title">WhatsApp Bantuan Darurat</div>
+                  <div class="channel-desc">Komunikasi langsung dengan anggota Satgas jika Anda butuh respons seketika.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="report-action-col">
+            <span class="report-action-badge">Akses Form Mandiri</span>
+            <h4>Buka Formulir Laporan</h4>
+            <p>
+              Klik tombol di bawah untuk mengisi formulir aduan terintegrasi (Google Form Resmi Satgas PPKPT ITESA Muhammadiyah Semarang).
+            </p>
+
+            <div class="report-btn-group">
+              <!-- Sesuai PRD baris 150: rujukan ke google form tanpa database -->
+              <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-lg" id="btnExternalForm">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                Buka Formulir Google Form Resmi
+              </a>
+              <button type="button" class="btn btn-outline" onclick="openReportGuideModal()">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                Panduan Cara Melapor Aman
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. PUSAT INFORMASI & UNDUHAN
+       ======================================================================== -->
+  <section class="downloads-section" id="unduhan">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Regulasi & Panduan</span>
+        <h2 class="section-title">Pusat Informasi & Unduhan</h2>
+        <p class="section-subtitle">
+          Akses dokumen resmi dasar hukum, pedoman teknis pencegahan, buku panduan mahasiswa, serta materi edukasi yang dapat diunduh bebas.
+        </p>
+      </div>
+
+      <!-- Filter and Search Bar -->
+      <div class="filter-bar">
+        <div class="filter-tags">
+          <button class="filter-tag-btn active" data-category="all" onclick="filterDocs('all', this)">Semua Dokumen</button>
+          <button class="filter-tag-btn" data-category="regulasi" onclick="filterDocs('regulasi', this)">Regulasi & Aturan</button>
+          <button class="filter-tag-btn" data-category="panduan" onclick="filterDocs('panduan', this)">Buku Panduan / Modul</button>
+          <button class="filter-tag-btn" data-category="poster" onclick="filterDocs('poster', this)">Poster & Infografis</button>
+        </div>
+
+        <div class="search-input-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="searchDocInput" placeholder="Cari dokumen..." onkeyup="searchDocuments()">
+        </div>
+      </div>
+
+      <!-- Document Grid -->
+      <div class="downloads-grid" id="docsGrid">
+        <!-- Doc 1 -->
+        <div class="doc-card" data-category="regulasi" data-name="permendikbudristek nomor 30 tahun 2021 ppks">
+          <div class="doc-card-top">
+            <span class="doc-badge">Regulasi</span>
+            <span class="doc-format">PDF • 1.4 MB</span>
+          </div>
+          <h4>Permendikbudristek No. 30 Tahun 2021</h4>
+          <p>Peraturan Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi tentang Pencegahan dan Penanganan Kekerasan Seksual di Perguruan Tinggi.</p>
+          <a href="PRD01.md" download="Permendikbudristek-30-2021.pdf" class="doc-download-btn">
+            <span>Unduh Dokumen</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+        </div>
+
+        <!-- Doc 2 -->
+        <div class="doc-card" data-category="regulasi" data-name="undang undang nomor 12 tahun 2022 tindak pidana kekerasan seksual tpks">
+          <div class="doc-card-top">
+            <span class="doc-badge">Regulasi</span>
+            <span class="doc-format">PDF • 2.1 MB</span>
+          </div>
+          <h4>UU No. 12 Tahun 2022 (UU TPKS)</h4>
+          <p>Undang-Undang Republik Indonesia tentang Tindak Pidana Kekerasan Seksual sebagai payung hukum perlindungan dan penegakan nasional.</p>
+          <a href="PRD01.md" download="UU-12-2022-TPKS.pdf" class="doc-download-btn">
+            <span>Unduh Dokumen</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+        </div>
+
+        <!-- Doc 3 -->
+        <div class="doc-card" data-category="panduan" data-name="sop alur penanganan kekerasan seksual itesa">
+          <div class="doc-card-top">
+            <span class="doc-badge badge-guide">SOP Resmi</span>
+            <span class="doc-format">PDF • 850 KB</span>
+          </div>
+          <h4>SOP Alur Penanganan Kasus ITESA</h4>
+          <p>Prosedur Operasional Standar resmi internal Satgas PPKPT ITESA Muhammadiyah Semarang dari pelaporan hingga sidang rekomendasi.</p>
+          <a href="PRD01.md" download="SOP-Satgas-PPKPT-ITESA.pdf" class="doc-download-btn">
+            <span>Unduh Dokumen</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+        </div>
+
+        <!-- Doc 4 -->
+        <div class="doc-card" data-category="panduan" data-name="buku saku mahasiswa kenali dan cegah kekerasan seksual">
+          <div class="doc-card-top">
+            <span class="doc-badge badge-guide">Buku Saku</span>
+            <span class="doc-format">PDF • 3.2 MB</span>
+          </div>
+          <h4>Buku Saku Mahasiswa: Kenali & Cegah</h4>
+          <p>Panduan ringkas praktis bagi mahasiswa untuk mengenali batasan persetujuan (*consent*), tanda bahaya relasi toxic, dan cara menolong korban.</p>
+          <a href="PRD01.md" download="Buku-Saku-PPKPT-Mahasiswa.pdf" class="doc-download-btn">
+            <span>Unduh Dokumen</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+        </div>
+
+        <!-- Doc 5 -->
+        <div class="doc-card" data-category="panduan" data-name="panduan psychological first aid pfa kampus">
+          <div class="doc-card-top">
+            <span class="doc-badge badge-guide">Modul</span>
+            <span class="doc-format">PDF • 1.8 MB</span>
+          </div>
+          <h4>Modul Dukungan Awal Psikologis (PFA)</h4>
+          <p>Panduan pertolongan pertama pada kondisi psikologis darurat bagi dosen wali, organisasi mahasiswa, dan pendamping sebaya.</p>
+          <a href="PRD01.md" download="Modul-PFA-Kampus.pdf" class="doc-download-btn">
+            <span>Unduh Dokumen</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+        </div>
+
+        <!-- Doc 6 -->
+        <div class="doc-card" data-category="poster" data-name="poster infografis alur pelaporan dan kontak satgas">
+          <div class="doc-card-top">
+            <span class="doc-badge badge-poster">Poster</span>
+            <span class="doc-format">JPG/PDF • 4.5 MB</span>
+          </div>
+          <h4>Poster Infografis Alur Pelaporan Kampus</h4>
+          <p>Materi cetak poster siap pasang di mading fakultas, gedung perkuliahan, dan ruang sekretariat organisasi mahasiswa.</p>
+          <a href="assets/Logo PPKPT ITESA.jpeg" download="Poster-Infografis-PPKPT-ITESA.jpeg" class="doc-download-btn">
+            <span>Unduh Dokumen</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. FAQ ACCORDION SECTION
+       ======================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-container">
+      <div class="section-header text-center">
+        <span class="section-tag">Tanya Jawab</span>
+        <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+        <p class="section-subtitle">
+          Informasi penting mengenai keamanan identitas, proses pendampingan, dan hak-hak Anda saat melapor ke Satgas PPKPT.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Apakah identitas saya terjamin aman dan dirahasiakan jika melapor?</span>
+            <div class="faq-icon-toggle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Ya, 100% aman dan dirahasiakan.</strong> Sesuai Permendikbudristek No. 30 Tahun 2021 dan UU Perlindungan Data Pribadi, seluruh anggota Satgas menandatangani pakta integritas kerahasiaan. Identitas korban dan saksi tidak akan dibuka ke publik maupun ke pihak yang tidak berkepentingan.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Bisakah saya melapor secara anonim (tanpa menyebutkan nama saya)?</span>
+            <div class="faq-icon-toggle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p>Bisa. Kami menyediakan opsi laporan anonim. Anda dapat menyampaikan kronologi kejadian, bukti pendukung, dan pihak terlapor. Namun, bila memungkinkan, kami menyarankan mencantumkan kontak samaran (seperti email atau nomor WhatsApp sekunder) agar tim Satgas dapat memberikan informasi perlindungan dan progres tindak lanjut.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Apa yang harus saya lakukan jika saya adalah saksi, bukan korban?</span>
+            <div class="faq-icon-toggle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p>Anda sangat dianjurkan untuk melapor! Saksi yang memiliki itikad baik dilindungi secara hukum dari ancaman kriminalisasi atau sanksi akademik kampus. Sebelum melapor, Anda juga disarankan untuk menanyakan kesediaan korban secara suportif tanpa memaksa.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Berapa lama waktu yang dibutuhkan Satgas untuk menindaklanjuti laporan?</span>
+            <div class="faq-icon-toggle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p>Respons awal dilakukan dalam kurun waktu <strong>maksimal 1x24 jam kerja</strong> sejak laporan diterima. Pemeriksaan kasus dan perumusan rekomendasi diselesaikan dalam jangka waktu maksimal 30 hari kerja sesuai pedoman teknis kementerian.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Apakah ada pungutan biaya untuk layanan konseling dan pendampingan hukum?</span>
+            <div class="faq-icon-toggle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Tidak ada biaya sama sekali (Gratis).</strong> Seluruh pembiayaan penanganan laporan, konseling psikologis, dan pendampingan korban ditanggung penuh oleh institusi ITESA Muhammadiyah Semarang.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Bagaimana jika pelaku adalah dosen, staf, atau pejabat kampus?</span>
+            <div class="faq-icon-toggle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p>Satgas PPKPT adalah lembaga independen yang beroperasi tanpa memandang jabatan atau relasi kuasa terlapor. Jika terlapor adalah dosen atau pimpinan, Satgas memiliki kewenangan untuk merekomendasikan penonaktifan sementara tugas akademik/struktural terlapor demi menjaga objektivitas pemeriksaan dan melindungi hak korban.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       12. HUBUNGI KAMI & PETA INTERAKTIF
+       ======================================================================== -->
+  <section class="contact-section" id="kontak">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Sekretariat Resmi</span>
+        <h2 class="section-title">Hubungi Satgas PPKPT ITESA</h2>
+        <p class="section-subtitle">
+          Kami siap mendengar dan membantu Anda. Jangan ragu menghubungi kami secara daring maupun bertatap muka di ruang sekretariat.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Card -->
+        <div class="contact-info-card">
+          <h3>Kanal Komunikasi Langsung</h3>
+          <p>
+            Sekretariat Satgas PPKPT ITESA Muhammadiyah Semarang berlokasi di dalam lingkungan kampus dengan jaminan privasi ruang konsultasi.
+          </p>
+
+          <div class="contact-channels-list">
+            <div class="contact-channel-item">
+              <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="cc-details">
+                <h5>Alamat Sekretariat</h5>
+                <span>Gedung Kampus ITESA Muhammadiyah Semarang, Ruang Layanan Terpadu PPKPT, Jl. Prof. Dr. Hamka No.KM.1, Tambakaji, Kec. Ngaliyan, Kota Semarang, Jawa Tengah 50185.</span>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="cc-details">
+                <h5>Hotline WhatsApp &amp; Telepon Kantor</h5>
+                <a href="https://wa.me/6282134567890?text=Halo%20Satgas%20PPKPT%20ITESA%2C%20saya%20ingin%20berkonsultasi." target="_blank" rel="noopener noreferrer">WA: +62 821-3456-7890 (24/7 Darurat)</a>
+                <span style="display: block; font-size: 0.8125rem; color: var(--text-muted); margin-top: 0.2rem;">Telepon Kantor: (024) 7608786</span>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="cc-details">
+                <h5>Email Resmi Pengaduan</h5>
+                <a href="mailto:satgas.ppkpt@itesa.ac.id">satgas.ppkpt@itesa.ac.id</a>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="cc-icon" style="background: var(--bg-slate); color: var(--text-dark);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="cc-details">
+                <h5>Jam Pelayanan Tatap Muka</h5>
+                <span>Senin – Jumat: 08.30 – 16.00 WIB (Kanal WA melayani aduan darurat setiap saat)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-action-btn-row">
+            <a href="https://wa.me/6282134567890" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              Chat WhatsApp Langsung
+            </a>
+            <a href="mailto:satgas.ppkpt@itesa.ac.id" class="btn btn-outline">
+              Kirim Surel Resmi
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Map Wrapper -->
+        <div class="contact-map-wrapper">
+          <div class="map-header">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Lokasi Kampus ITESA Muhammadiyah Semarang
+            </h4>
+            <span style="font-size: 0.775rem; color: var(--text-muted);">Ngaliyan, Kota Semarang, Jawa Tengah</span>
+          </div>
+          <!-- Embedded OpenStreetMap iframe for lightweight, privacy-respecting, zero-API-key mapping -->
+          <iframe 
+            class="map-frame" 
+            title="Peta Lokasi ITESA Muhammadiyah Semarang" 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=110.3300%2C-7.0050%2C110.3800%2C-6.9650&amp;layer=mapnik&amp;marker=-6.9856%2C110.3552" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       13. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & About -->
+        <div class="footer-about">
+          <div class="footer-brand-logo">
+            <img src="assets/Logo PPKPT ITESA.jpeg" alt="Logo Satgas PPKPT ITESA" class="footer-logo-img" width="44" height="44">
+            <div class="footer-brand-text">
+              <h4>SATGAS PPKPT</h4>
+              <p>ITESA Muhammadiyah Semarang</p>
+            </div>
+          </div>
+          <p>
+            Kanal resmi digital Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual di Perguruan Tinggi (PPKPT) Institut Teknologi Statistika dan Bisnis Muhammadiyah Semarang.
+          </p>
+          <div class="footer-legal-badge">
+            Sesuai Permendikbudristek No. 30 Tahun 2021
+          </div>
+        </div>
+
+        <!-- Col 2: Navigasi Cepat -->
+        <div class="footer-col">
+          <h5>Navigasi Halaman</h5>
+          <div class="footer-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang" onclick="switchAboutTab('profil')">Profil & Anggota Satgas</a>
+            <a href="#tentang" onclick="switchAboutTab('struktur')">Struktur Organisasi</a>
+            <a href="#tentang" onclick="switchAboutTab('tugas')">Tugas dan Wewenang</a>
+            <a href="#alur-pelaporan">Alur Penanganan Kasus</a>
+            <a href="#layanan">Layanan & Pendampingan</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Regulasi & Dokumen -->
+        <div class="footer-col">
+          <h5>Informasi & Dokumen</h5>
+          <div class="footer-links">
+            <a href="#unduhan">Permendikbudristek No. 30/2021</a>
+            <a href="#unduhan">UU No. 12/2022 (TPKS)</a>
+            <a href="#unduhan">SOP Pelaporan Kampus</a>
+            <a href="#unduhan">Buku Saku Mahasiswa</a>
+            <a href="#lacak-laporan">Lacak Tiket Kasus</a>
+            <a href="#faq">FAQ Keamanan Pelapor</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Kontak & Alamat -->
+        <div class="footer-col">
+          <h5>Sekretariat Satgas</h5>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Jl. Prof. Dr. Hamka No.KM.1, Tambakaji, Kec. Ngaliyan, Kota Semarang, Jawa Tengah 50185</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Telp: (024) 7608786 | WA: +62 821-3456-7890</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Email: satgas.ppkpt@itesa.ac.id</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>Satgas PPKPT ITESA Muhammadiyah Semarang</strong>. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#tentang" onclick="switchAboutTab('prinsip')">Kebijakan Privasi</a>
+          <a href="#alur-pelaporan">Kode Etik Penanganan</a>
+          <a href="#kontak">Bantuan Pengaduan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       14. FLOATING ACTION BUTTONS (WHATSAPP & BACK TO TOP)
+       ======================================================================== -->
+  <aside class="floating-actions" aria-label="Aksi Cepat Mengambang">
+    <a href="https://wa.me/6282134567890?text=Halo%20Satgas%20PPKPT%20ITESA%2C%20saya%20membutuhkan%20informasi%20atau%20bantuan%20segera." target="_blank" rel="noopener noreferrer" class="fab-btn fab-whatsapp" aria-label="Chat WhatsApp Satgas">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.02 16.59c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.188 8.188 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.71 4.3 3.8.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+    </a>
+    <button class="fab-btn fab-top" id="btnBackToTop" aria-label="Kembali ke Atas" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+  </aside>
+
+  <!-- ========================================================================
+       15. MODAL PANDUAN CARA MELAPOR AMAN
+       ======================================================================== -->
+  <div class="modal-backdrop" id="reportGuideModal" role="dialog" aria-modal="true" aria-labelledby="modalGuideTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeReportGuideModal()" aria-label="Tutup Jendela Panduan">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="section-tag" style="background: var(--accent-soft); color: #92400E;">Panduan Sivitas</span>
+        <h3 id="modalGuideTitle">Tata Cara Melapor dengan Aman</h3>
+      </div>
+
+      <div class="modal-body">
+        <p style="margin-bottom: 1rem;">
+          Satgas PPKPT ITESA Muhammadiyah Semarang berkomitmen memberikan pendampingan yang berpihak pada korban. Berikut hal yang perlu Anda perhatikan:
+        </p>
+
+        <div style="background: var(--bg-light); border-radius: var(--radius-md); padding: 1rem 1.25rem; margin-bottom: 1.25rem; border: 1px solid var(--border-light);">
+          <h5 style="font-size: 0.95rem; margin-bottom: 0.25rem; color: var(--primary-dark);">1. Melapor dengan Identitas Terbuka</h5>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">
+            Cocok jika Anda menginginkan pendampingan intensif, surat dispensasi kuliah/kerja, atau perlindungan resmi di kampus. Identitas Anda tetap dilindungi dari pihak luar.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-light); border-radius: var(--radius-md); padding: 1rem 1.25rem; margin-bottom: 1.25rem; border: 1px solid var(--border-light);">
+          <h5 style="font-size: 0.95rem; margin-bottom: 0.25rem; color: var(--primary-dark);">2. Melapor Secara Anonim</h5>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">
+            Anda tidak perlu mencantumkan nama asli. Harap sertakan kronologi kejadian sejelas mungkin beserta bukti yang relevan agar Satgas dapat melakukan penyelidikan awal.
+          </p>
+        </div>
+
+        <div style="background: var(--color-success-bg); border-radius: var(--radius-md); padding: 1rem 1.25rem; border: 1px solid #A7F3D0;">
+          <h5 style="font-size: 0.95rem; margin-bottom: 0.25rem; color: #065F46;">Bukti yang Dapat Disertakan</h5>
+          <p style="font-size: 0.85rem; color: #065F46; margin: 0;">
+            Tangkapan layar obrolan (*screenshot*), rekaman suara/video, surat pernyataan saksi, atau dokumen medis jika tersedia.
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+        <button type="button" class="btn btn-outline" onclick="closeReportGuideModal()">Tutup</button>
+        <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+          Lanjut ke Formulir Google Form
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
