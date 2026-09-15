@@ -10,12 +10,12 @@
   --primary-dark: #123E8C;
   --primary-light: #4A85ED;
   --primary-subtle: #EEF4FD;
-  
+
   --accent-yellow: #FFC107;
   --accent-yellow-hover: #FFD036;
   --accent-soft: #FFF9E6;
   --accent-border: #FFE082;
-  
+
   /* Status Colors */
   --color-success: #10B981;
   --color-success-bg: #ECFDF5;
@@ -23,13 +23,13 @@
   --color-info-bg: #E0F2FE;
   --color-warning: #F59E0B;
   --color-warning-bg: #FEF3C7;
-  
+
   /* Neutrals */
   --text-dark: #1A1D29;
   --text-body: #374151;
   --text-muted: #6B7280;
   --text-light: #9CA3AF;
-  
+
   --bg-white: #FFFFFF;
   --bg-light: #F8FAFC;
   --bg-slate: #F1F5F9;
@@ -63,7 +63,9 @@
 }
 
 /* --- CSS Reset & Global Standards --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -85,7 +87,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
@@ -105,12 +108,15 @@ button {
   outline: none;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: 1rem;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -125,7 +131,12 @@ ul, ol {
 }
 
 /* --- Typography Utilities --- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--text-dark);
   font-weight: 700;
@@ -138,8 +149,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
 }
 
-.text-center { text-align: center; }
-.text-muted { color: var(--text-muted); }
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
 
 /* --- Section Headers --- */
 .section-header {
@@ -157,7 +173,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-blue);
   background: #ffffff;
   padding: 0.3rem 0.85rem;
-  border-radius: 3px; /* frame persegi panjang seperti bentuk kertas label */
+  border-radius: 3px;
+  /* frame persegi panjang seperti bentuk kertas label */
   border: 1.5px solid var(--primary-blue);
   border-left: 4.5px solid var(--primary-blue);
   box-shadow: 0 1px 3px rgba(27, 94, 209, 0.08);
@@ -311,7 +328,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.6875rem;
   font-weight: 800;
   padding: 0.15rem 0.5rem;
-  border-radius: 2px; /* bentuk frame persegi panjang label */
+  border-radius: 2px;
+  /* bentuk frame persegi panjang label */
   border: 1px solid rgba(0, 0, 0, 0.15);
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -458,7 +476,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
-  white-space: nowrap; /* Tulisannya selalu satu baris */
+  white-space: nowrap;
+  /* Tulisannya selalu satu baris */
   flex-shrink: 0;
 }
 
@@ -513,7 +532,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-body);
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
-  white-space: nowrap; /* Tulisannya selalu satu baris */
+  white-space: nowrap;
+  /* Tulisannya selalu satu baris */
 }
 
 .dropdown-item:hover {
@@ -549,7 +569,8 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  white-space: nowrap; /* Tulisannya selalu satu baris */
+  white-space: nowrap;
+  /* Tulisannya selalu satu baris */
   flex-shrink: 0;
   transition: transform var(--transition-fast), background-color var(--transition-fast), filter var(--transition-fast);
 }
@@ -664,7 +685,8 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
-.drawer-link:hover, .drawer-link.active {
+.drawer-link:hover,
+.drawer-link.active {
   background: var(--primary-subtle);
   color: var(--primary-blue);
 }
@@ -1062,8 +1084,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Tab 1: Profil & Komitmen */
@@ -1438,114 +1467,40 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #6EE7B7;
 }
 
-.org-member-badge-row {
+.org-member-top {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 0.65rem;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
 }
 
-.org-member-avatar-box {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  position: relative;
+.org-member-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
-  background: var(--bg-light);
-  transition: all var(--transition-fast);
-}
-
-/* Avatar Strokes matching Unsur Badges */
-.avatar-stroke-dosen {
-  border: 2.5px solid #2563EB;
-  box-shadow: 0 0 0 1px #BFDBFE, var(--shadow-xs);
-}
-
-.avatar-stroke-tendik {
-  border: 2.5px solid #D97706;
-  box-shadow: 0 0 0 1px #FDE68A, var(--shadow-xs);
-}
-
-.avatar-stroke-mahasiswa {
-  border: 2.5px solid #059669;
-  box-shadow: 0 0 0 1px #A7F3D0, var(--shadow-xs);
-}
-
-.org-member-card:hover .avatar-stroke-dosen {
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25), var(--shadow-sm);
-}
-
-.org-member-card:hover .avatar-stroke-tendik {
-  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.25), var(--shadow-sm);
-}
-
-.org-member-card:hover .avatar-stroke-mahasiswa {
-  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.25), var(--shadow-sm);
-}
-
-/* Photo Image Customization */
-.org-avatar-photo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  z-index: 2;
-  border-radius: inherit;
-}
-
-.org-avatar-photo:not([src]), 
-.org-avatar-photo[src=""] {
-  display: none;
-}
-
-/* Fallback / Placeholder when no custom image is provided */
-.org-avatar-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  user-select: none;
-  z-index: 1;
-  border-radius: inherit;
+  font-weight: 700;
+  font-size: 0.8rem;
 }
 
 .avatar-dosen {
-  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  background: var(--primary-subtle);
   color: var(--primary-blue);
+  border: 1px solid #BFDBFE;
 }
 
 .avatar-tendik {
-  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+  background: var(--accent-soft);
   color: #B45309;
+  border: 1px solid #FDE68A;
 }
 
 .avatar-mahasiswa {
-  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
-  color: #047857;
-}
-
-.org-avatar-icon {
-  opacity: 0.7;
-}
-
-.org-avatar-initials {
-  font-size: 1.6rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border: 1px solid #A7F3D0;
 }
 
 .org-card-field {
@@ -2144,7 +2099,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.75rem;
   font-weight: 800;
   padding: 0.25rem 0.75rem;
-  border-radius: 2px; /* kertas label */
+  border-radius: 2px;
+  /* kertas label */
   border: 1.5px solid #F59E0B;
   border-left: 4px solid #D97706;
   margin-bottom: 1rem;
@@ -2654,7 +2610,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.15rem;
 }
 
-.cc-details a, .cc-details span {
+.cc-details a,
+.cc-details span {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-dark);
@@ -2967,7 +2924,9 @@ h1, h2, h3, h4, h5, h6 {
    16. RESPONSIVE BREAKPOINTS (Mobile-First / Device-Friendly)
    ========================================================================== */
 @media (max-width: 1140px) {
-  .navbar-nav, .navbar-actions .btn-consult-nav {
+
+  .navbar-nav,
+  .navbar-actions .btn-consult-nav {
     display: none;
   }
 
@@ -2975,7 +2934,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
   }
 
-  .about-grid, .tasks-grid, .contact-grid {
+  .about-grid,
+  .tasks-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
@@ -3181,7 +3142,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 0;
   opacity: 1;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cellipse cx='20' cy='20' rx='14' ry='9' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.06'/%3E%3Cellipse cx='60' cy='20' rx='14' ry='9' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.06'/%3E%3Cellipse cx='20' cy='60' rx='14' ry='9' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.06'/%3E%3Cellipse cx='60' cy='60' rx='14' ry='9' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.06'/%3E%3Cellipse cx='20' cy='20' rx='9' ry='14' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.06'/%3E%3Cellipse cx='60' cy='20' rx='9' ry='14' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.06'/%3E%3Cellipse cx='20' cy='60' rx='9' ry='14' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.06'/%3E%3Cellipse cx='60' cy='60' rx='9' ry='14' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.06'/%3E%3Ccircle cx='40' cy='40' r='7' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.05'/%3E%3Ccircle cx='0' cy='40' r='7' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.05'/%3E%3Ccircle cx='80' cy='40' r='7' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.05'/%3E%3Ccircle cx='40' cy='0' r='7' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.05'/%3E%3Ccircle cx='40' cy='80' r='7' fill='none' stroke='%231B5ED1' stroke-width='1' opacity='0.05'/%3E%3C/svg%3E"),
-    linear-gradient(to bottom, transparent 30%, rgba(255,255,255,0.8) 100%);
+    linear-gradient(to bottom, transparent 30%, rgba(255, 255, 255, 0.8) 100%);
   background-size: 80px 80px, 100%;
   background-repeat: repeat, no-repeat;
   mix-blend-mode: multiply;
@@ -3240,6 +3201,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-footer {
   position: relative;
 }
+
 .site-footer::before {
   content: '';
   position: absolute;
@@ -3250,6 +3212,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 80px 80px;
   background-repeat: repeat;
 }
+
 .site-footer .container,
 .site-footer .footer-grid,
 .site-footer .footer-bottom {
@@ -3261,6 +3224,7 @@ h1, h2, h3, h4, h5, h6 {
 .report-section {
   position: relative;
 }
+
 .report-section::before {
   content: '';
   position: absolute;
@@ -3271,6 +3235,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 60px 60px;
   background-repeat: repeat;
 }
+
 .report-section .container {
   position: relative;
   z-index: 1;
@@ -3284,13 +3249,11 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background: linear-gradient(
-    to right,
-    rgba(248, 250, 252, 0.6) 0%,
-    transparent 15%,
-    transparent 85%,
-    rgba(248, 250, 252, 0.6) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(248, 250, 252, 0.6) 0%,
+      transparent 15%,
+      transparent 85%,
+      rgba(248, 250, 252, 0.6) 100%);
 }
 
 .contact-section::after {
@@ -3299,12 +3262,17 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.5) 0%,
-    transparent 20%,
-    transparent 80%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      transparent 20%,
+      transparent 80%,
+      rgba(255, 255, 255, 0.5) 100%);
 }
 
+z-index: 0;
+background: linear-gradient(to bottom,
+  rgba(255, 255, 255, 0.5) 0%,
+  transparent 20%,
+  transparent 80%,
+  rgba(255, 255, 255, 0.5) 100%);
+}
