@@ -1146,138 +1146,473 @@ h1, h2, h3, h4, h5, h6 {
 /* Tab 2: Struktur Organisasi */
 .org-chart-wrapper {
   background: #ffffff;
-  padding: 3rem 2rem;
+  padding: 2.5rem 1.75rem;
   border-radius: var(--radius-xl);
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow-md);
-  text-align: center;
-}
-
-.org-node {
-  background: var(--bg-light);
-  border: 1.5px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  padding: 1rem 1.5rem;
-  display: inline-block;
-  min-width: 220px;
-  transition: all var(--transition-fast);
-  box-shadow: var(--shadow-xs);
-}
-
-.org-node:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-.org-node.node-pembina {
-  background: #EDE9FE;
-  border-color: #C4B5FD;
-}
-
-.org-node.node-pembina .org-role {
-  color: #6D28D9;
-}
-
-.org-node.node-leader {
-  background: var(--primary-blue);
-  border-color: var(--primary-dark);
-  color: #ffffff;
-}
-
-.org-node.node-leader .org-role {
-  color: var(--accent-yellow);
-}
-
-.org-node.node-leader .org-name {
-  color: #ffffff;
-}
-
-.org-node.node-secretary {
-  background: var(--accent-soft);
-  border-color: var(--accent-border);
-}
-
-.org-node.node-secretary .org-role {
-  color: #92400E;
-}
-
-.org-role {
-  font-size: 0.775rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--primary-blue);
-  margin-bottom: 0.25rem;
-}
-
-.org-name {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-dark);
-}
-
-.org-meta {
-  font-size: 0.775rem;
-  color: var(--text-muted);
-}
-
-.org-connector {
-  width: 2px;
-  height: 28px;
-  background: #CBD5E1;
-  margin: 0 auto;
-}
-
-.org-row-divisions {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-  position: relative;
-}
-
-.org-div-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-top: 4px solid var(--primary-blue);
-  border-radius: var(--radius-md);
-  padding: 1.5rem;
   text-align: left;
+}
+
+.org-header-banner {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.org-header-banner .section-tag {
+  margin-bottom: 0.5rem;
+}
+
+.org-header-banner h3 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.org-header-banner p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  max-width: 680px;
+  margin: 0 auto 1.25rem;
+}
+
+.org-stats-pills {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.org-stat-pill {
+  font-size: 0.775rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-light);
+  color: var(--text-dark);
+  border: 1px solid var(--border-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.org-stat-pill.pill-blue {
+  background: var(--primary-subtle);
+  color: var(--primary-blue);
+  border-color: #BFDBFE;
+}
+
+.org-stat-pill.pill-amber {
+  background: var(--accent-soft);
+  color: #B45309;
+  border-color: #FDE68A;
+}
+
+.org-stat-pill.pill-green {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border-color: #A7F3D0;
+}
+
+/* Leadership Row */
+.org-leadership-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.org-lead-card {
+  flex: 1;
+  min-width: 290px;
+  max-width: 440px;
+  background: #ffffff;
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  position: relative;
+  transition: all var(--transition-fast);
   box-shadow: var(--shadow-sm);
-}
-
-.org-div-card:nth-child(2) {
-  border-top-color: var(--accent-yellow);
-}
-
-.org-div-card h4 {
-  font-size: 1.05rem;
-  margin-bottom: 0.75rem;
-}
-
-.org-member-list {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
 }
 
-.org-member-item {
+.org-lead-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.org-lead-card.card-ketua {
+  border-color: var(--primary-blue);
+  background: linear-gradient(180deg, rgba(27, 94, 209, 0.04) 0%, #ffffff 100%);
+}
+
+.org-lead-card.card-sekretaris {
+  border-color: #D97706;
+  background: linear-gradient(180deg, rgba(217, 119, 6, 0.04) 0%, #ffffff 100%);
+}
+
+.org-lead-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 0.75rem;
-  background: var(--bg-light);
-  border-radius: var(--radius-sm);
-  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
 }
 
-.org-member-role-badge {
+.org-lead-badge {
   font-size: 0.725rem;
-  font-weight: 700;
-  padding: 0.2rem 0.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.75rem;
   border-radius: var(--radius-full);
-  background: #E2E8F0;
+}
+
+.card-ketua .org-lead-badge {
+  background: var(--primary-blue);
+  color: #ffffff;
+}
+
+.card-sekretaris .org-lead-badge {
+  background: #D97706;
+  color: #ffffff;
+}
+
+.org-lead-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.card-ketua .org-lead-avatar {
+  background: var(--primary-subtle);
+  color: var(--primary-blue);
+  border: 2px solid #BFDBFE;
+}
+
+.card-sekretaris .org-lead-avatar {
+  background: var(--accent-soft);
+  color: #B45309;
+  border: 2px solid #FDE68A;
+}
+
+.org-lead-info {
+  margin-bottom: 1rem;
+}
+
+.org-lead-meta-row {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Connecting Line */
+.org-connector-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0 2rem;
+}
+
+.org-connector-line {
+  width: 2px;
+  height: 32px;
+  background: linear-gradient(180deg, #CBD5E1 0%, #94A3B8 100%);
+}
+
+.org-connector-node {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+  box-shadow: 0 0 0 4px var(--primary-subtle);
+}
+
+/* Members Section */
+.org-members-section {
+  background: var(--bg-light);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+}
+
+.org-members-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.org-members-title-group h4 {
+  font-size: 1.2rem;
+  font-weight: 800;
   color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.org-members-title-group p {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.org-filter-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.org-filter-btn {
+  font-size: 0.775rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+  background: #ffffff;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.org-filter-btn:hover {
+  background: #F1F5F9;
+  border-color: #CBD5E1;
+}
+
+.org-filter-btn.active {
+  background: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
+  box-shadow: var(--shadow-xs);
+}
+
+/* Members Grid & Cards */
+.org-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.org-member-card {
+  background: #ffffff;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-xs);
+  position: relative;
+}
+
+.org-member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: #93C5FD;
+}
+
+.org-member-card[data-unsur="dosen"]:hover {
+  border-color: #93C5FD;
+}
+
+.org-member-card[data-unsur="tendik"]:hover {
+  border-color: #FCD34D;
+}
+
+.org-member-card[data-unsur="mahasiswa"]:hover {
+  border-color: #6EE7B7;
+}
+
+.org-member-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.org-member-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.avatar-dosen {
+  background: var(--primary-subtle);
+  color: var(--primary-blue);
+  border: 1px solid #BFDBFE;
+}
+
+.avatar-tendik {
+  background: var(--accent-soft);
+  color: #B45309;
+  border: 1px solid #FDE68A;
+}
+
+.avatar-mahasiswa {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border: 1px solid #A7F3D0;
+}
+
+.org-card-field {
+  margin-bottom: 0.65rem;
+}
+
+.org-field-label {
+  font-size: 0.675rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-light);
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.org-field-jabatan {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.card-sekretaris .org-field-jabatan {
+  color: #D97706;
+}
+
+.org-field-nama {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.org-lead-card .org-field-nama {
+  font-size: 1.15rem;
+}
+
+.org-badge-unsur {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.org-badge-unsur.unsur-dosen {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  border: 1px solid #BFDBFE;
+}
+
+.org-badge-unsur.unsur-tendik {
+  background: #FFFBEB;
+  color: #B45309;
+  border: 1px solid #FDE68A;
+}
+
+.org-badge-unsur.unsur-mahasiswa {
+  background: #ECFDF5;
+  color: #047857;
+  border: 1px solid #A7F3D0;
+}
+
+/* Collapsible Official Table */
+.org-table-section {
+  margin-top: 1.5rem;
+}
+
+.org-table-collapsible {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+}
+
+.org-table-summary {
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #F8FAFC;
+  transition: background var(--transition-fast);
+  user-select: none;
+}
+
+.org-table-summary:hover {
+  background: #F1F5F9;
+}
+
+.org-table-summary .summary-chevron {
+  margin-left: auto;
+  transition: transform var(--transition-fast);
+}
+
+.org-table-collapsible[open] .org-table-summary .summary-chevron {
+  transform: rotate(180deg);
+}
+
+.org-table-wrapper {
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+.org-official-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.org-official-table th {
+  background: #F1F5F9;
+  color: var(--text-dark);
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--border-light);
+  text-transform: uppercase;
+  font-size: 0.725rem;
+  letter-spacing: 0.05em;
+}
+
+.org-official-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-dark);
+}
+
+.org-official-table tbody tr:hover {
+  background: #F8FAFC;
+}
+
+.org-official-table tbody tr:nth-child(even) {
+  background: #FAFAFA;
 }
 
 /* Tab 3: Tugas dan Wewenang */

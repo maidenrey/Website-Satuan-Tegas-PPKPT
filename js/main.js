@@ -140,6 +140,25 @@ function switchAboutTab(tabKey) {
 }
 
 /* ==========================================================================
+   4.5. FILTER STRUKTUR ORGANISASI
+   ========================================================================== */
+function filterOrgMembers(unsur, buttonElement) {
+  const filterBtns = document.querySelectorAll('.org-filter-btn');
+  filterBtns.forEach(btn => btn.classList.remove('active'));
+  if (buttonElement) buttonElement.classList.add('active');
+
+  const memberCards = document.querySelectorAll('.org-member-card');
+  memberCards.forEach(card => {
+    const cardUnsur = card.getAttribute('data-unsur');
+    if (unsur === 'all' || cardUnsur === unsur) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+/* ==========================================================================
    5. PUSAT INFORMASI & UNDUHAN FILTER & SEARCH
    ========================================================================== */
 function filterDocs(category, buttonElement) {

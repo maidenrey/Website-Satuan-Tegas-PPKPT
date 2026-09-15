@@ -351,78 +351,436 @@
         </div>
       </div>
 
-      <!-- Tab Content 2: Struktur Organisasi (Interactive Hierarchy Visual) -->
+      <!-- Tab Content 2: Struktur Organisasi (Hierarki & Kartu Anggota Resmi) -->
       <div class="tab-content-panel" id="tab-struktur" role="tabpanel">
         <div class="org-chart-wrapper">
-          <!-- Top Level: Pembina -->
-          <div class="org-node org-node-pembina">
-            <div class="org-role">Pembina & Penanggung Jawab</div>
-            <div class="org-name">Rektor ITESA Muhammadiyah Semarang</div>
-            <div class="org-meta">Pimpinan Institusi Kampus</div>
-          </div>
           
-          <div class="org-connector"></div>
-
-          <!-- Level 2: Ketua & Sekretaris -->
-          <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-            <div class="org-node org-node-leader">
-              <div class="org-role">Ketua Satgas PPKPT</div>
-              <div class="org-name">Dosen / Tenaga Ahli Terpilih</div>
-              <div class="org-meta">Koordinator Utama Penanganan Kasus</div>
-            </div>
-            <div class="org-node org-node-secretary">
-              <div class="org-role">Sekretaris Satgas</div>
-              <div class="org-name">Unsur Tenaga Kependidikan</div>
-              <div class="org-meta">Administrasi & Pencatatan Kasus</div>
+          <!-- Banner Header -->
+          <div class="org-header-banner">
+            <span class="section-tag" style="background: var(--primary-subtle); color: var(--primary-blue);">Struktur Resmi SK</span>
+            <h3>Pembentukan Satuan Tugas PPKPT</h3>
+            <p>Institut Teknologi Statistika dan Bisnis Muhammadiyah Semarang</p>
+            <div class="org-stats-pills">
+              <span class="org-stat-pill pill-blue">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                1 Ketua (Dosen)
+              </span>
+              <span class="org-stat-pill pill-amber">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                1 Sekertaris (Tendik)
+              </span>
+              <span class="org-stat-pill pill-green">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                13 Anggota (Dosen, Tendik, Mahasiswa)
+              </span>
             </div>
           </div>
 
-          <div class="org-connector"></div>
-
-          <!-- Level 3: Divisi Fungsional -->
-          <div class="org-row-divisions">
-            <div class="org-div-card">
-              <h4>Divisi Pencegahan & Edukasi</h4>
-              <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 0.85rem;">
-                Bertanggung jawab dalam sosialisasi, modul psikoedukasi, seminar anti-kekerasan seksual, dan kampanye kampus ramah perempuan.
-              </p>
-              <div class="org-member-list">
-                <div class="org-member-item">
-                  <span>Koordinator Divisi</span>
-                  <span class="org-member-role-badge">Unsur Dosen</span>
+          <!-- Tingkat Pimpinan: Ketua & Sekertaris -->
+          <div class="org-leadership-row">
+            <!-- Card 1: Ketua -->
+            <div class="org-lead-card card-ketua">
+              <div class="org-lead-top">
+                <span class="org-lead-badge">Ketua</span>
+                <div class="org-lead-avatar">LA</div>
+              </div>
+              <div class="org-lead-info">
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan" style="font-size: 0.95rem;">Ketua</div>
                 </div>
-                <div class="org-member-item">
-                  <span>Staf Edukasi Kampanye</span>
-                  <span class="org-member-role-badge">Unsur Mahasiswa</span>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h4 class="org-field-nama">Lathifatul Aulia, S.Si., M.Si.</h4>
                 </div>
-                <div class="org-member-item">
-                  <span>Fasilitator Modul</span>
-                  <span class="org-member-role-badge">Unsur Mahasiswa</span>
-                </div>
+              </div>
+              <div class="org-lead-meta-row">
+                <span class="org-field-label" style="margin: 0;">Unsur</span>
+                <span class="org-badge-unsur unsur-dosen">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  Dosen
+                </span>
               </div>
             </div>
 
-            <div class="org-div-card">
-              <h4>Divisi Penanganan & Pendampingan</h4>
-              <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 0.85rem;">
-                Bertanggung jawab memverifikasi laporan masuk, investigasi awal, penyediaan konseling psikologis, serta pendampingan hukum dan pemulihan.
-              </p>
-              <div class="org-member-list">
-                <div class="org-member-item">
-                  <span>Koordinator Penanganan</span>
-                  <span class="org-member-role-badge">Unsur Dosen</span>
+            <!-- Card 2: Sekertaris -->
+            <div class="org-lead-card card-sekretaris">
+              <div class="org-lead-top">
+                <span class="org-lead-badge">Sekertaris</span>
+                <div class="org-lead-avatar">MB</div>
+              </div>
+              <div class="org-lead-info">
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan" style="font-size: 0.95rem;">Sekertaris</div>
                 </div>
-                <div class="org-member-item">
-                  <span>Konselor / Pendamping</span>
-                  <span class="org-member-role-badge">Unsur Tendik</span>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h4 class="org-field-nama">Muthmainnah Barakatun Khoomisati, S.Psi.</h4>
                 </div>
-                <div class="org-member-item">
-                  <span>Pendamping Saksi/Korban</span>
-                  <span class="org-member-role-badge">Unsur Mahasiswa</span>
-                </div>
+              </div>
+              <div class="org-lead-meta-row">
+                <span class="org-field-label" style="margin: 0;">Unsur</span>
+                <span class="org-badge-unsur unsur-tendik">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  Tenaga Kependidikan
+                </span>
               </div>
             </div>
           </div>
+
+          <!-- Connector Tree -->
+          <div class="org-connector-wrap">
+            <div class="org-connector-line"></div>
+            <div class="org-connector-node"></div>
+          </div>
+
+          <!-- Tingkat Anggota: 13 Personel -->
+          <div class="org-members-section">
+            <div class="org-members-header">
+              <div class="org-members-title-group">
+                <h4>Anggota Satuan Tugas PPKPT</h4>
+                <p>13 Personel Anggota Satgas PPKPT ITESA Muhammadiyah Semarang</p>
+              </div>
+
+              <!-- Filter Pills -->
+              <div class="org-filter-pills">
+                <button type="button" class="org-filter-btn active" onclick="filterOrgMembers('all', this)">Semua Unsur (13)</button>
+                <button type="button" class="org-filter-btn" onclick="filterOrgMembers('dosen', this)">Dosen (2)</button>
+                <button type="button" class="org-filter-btn" onclick="filterOrgMembers('tendik', this)">Tendik (2)</button>
+                <button type="button" class="org-filter-btn" onclick="filterOrgMembers('mahasiswa', this)">Mahasiswa (9)</button>
+              </div>
+            </div>
+
+            <!-- Grid of 13 Anggota Cards -->
+            <div class="org-members-grid" id="orgMembersGrid">
+              
+              <!-- 1. Rowiyani, S.M., M.M. -->
+              <div class="org-member-card" data-unsur="dosen">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-dosen">RW</div>
+                  <span class="org-badge-unsur unsur-dosen">Dosen</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Rowiyani, S.M., M.M.</h5>
+                </div>
+              </div>
+
+              <!-- 2. Wulan Bhakti Pertiwi, S.Si., M.Si. -->
+              <div class="org-member-card" data-unsur="dosen">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-dosen">WP</div>
+                  <span class="org-badge-unsur unsur-dosen">Dosen</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Wulan Bhakti Pertiwi, S.Si., M.Si.</h5>
+                </div>
+              </div>
+
+              <!-- 3. Lailatul Qoderia, S.E. -->
+              <div class="org-member-card" data-unsur="tendik">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-tendik">LQ</div>
+                  <span class="org-badge-unsur unsur-tendik">Tenaga Kependidikan</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Lailatul Qoderia, S.E.</h5>
+                </div>
+              </div>
+
+              <!-- 4. Hapsari Dewi Saraswati, S.Hum. -->
+              <div class="org-member-card" data-unsur="tendik">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-tendik">HD</div>
+                  <span class="org-badge-unsur unsur-tendik">Tenaga Kependidikan</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Hapsari Dewi Saraswati, S.Hum.</h5>
+                </div>
+              </div>
+
+              <!-- 5. Daffa Haidar Maulana -->
+              <div class="org-member-card" data-unsur="mahasiswa">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-mahasiswa">DM</div>
+                  <span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Daffa Haidar Maulana</h5>
+                </div>
+              </div>
+
+              <!-- 6. Qurota A'yun -->
+              <div class="org-member-card" data-unsur="mahasiswa">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-mahasiswa">QA</div>
+                  <span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Qurota A'yun</h5>
+                </div>
+              </div>
+
+              <!-- 7. Niswah Al Adawiyah Shofa -->
+              <div class="org-member-card" data-unsur="mahasiswa">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-mahasiswa">NS</div>
+                  <span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Niswah Al Adawiyah Shofa</h5>
+                </div>
+              </div>
+
+              <!-- 8. Muhammad Mukti Ash Shiddiqi -->
+              <div class="org-member-card" data-unsur="mahasiswa">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-mahasiswa">MS</div>
+                  <span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Muhammad Mukti Ash Shiddiqi</h5>
+                </div>
+              </div>
+
+              <!-- 9. Risma Anita Sari -->
+              <div class="org-member-card" data-unsur="mahasiswa">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-mahasiswa">RA</div>
+                  <span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Risma Anita Sari</h5>
+                </div>
+              </div>
+
+              <!-- 10. Avreyra Putri Helmiya -->
+              <div class="org-member-card" data-unsur="mahasiswa">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-mahasiswa">AH</div>
+                  <span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Avreyra Putri Helmiya</h5>
+                </div>
+              </div>
+
+              <!-- 11. Syafiq Ahmad Annaufal -->
+              <div class="org-member-card" data-unsur="mahasiswa">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-mahasiswa">SA</div>
+                  <span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Syafiq Ahmad Annaufal</h5>
+                </div>
+              </div>
+
+              <!-- 12. Rhosid Susilo Nugroho -->
+              <div class="org-member-card" data-unsur="mahasiswa">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-mahasiswa">RN</div>
+                  <span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Rhosid Susilo Nugroho</h5>
+                </div>
+              </div>
+
+              <!-- 13. Maelani Solehah -->
+              <div class="org-member-card" data-unsur="mahasiswa">
+                <div class="org-member-top">
+                  <div class="org-member-avatar avatar-mahasiswa">MS</div>
+                  <span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span>
+                </div>
+                <div class="org-card-field">
+                  <span class="org-field-label">Jabatan</span>
+                  <div class="org-field-jabatan">Anggota</div>
+                </div>
+                <div class="org-card-field" style="margin-bottom: 0;">
+                  <span class="org-field-label">Nama Lengkap</span>
+                  <h5 class="org-field-nama">Maelani Solehah</h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Rekapitulasi Tabel Resmi SK -->
+          <div class="org-table-section">
+            <details class="org-table-collapsible">
+              <summary class="org-table-summary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span>Lihat Format Tabel SK Resmi Pembentukan Satgas PPKPT</span>
+                <svg class="summary-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </summary>
+              <div class="org-table-wrapper">
+                <table class="org-official-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 60px; text-align: center;">NO</th>
+                      <th style="width: 160px;">JABATAN</th>
+                      <th>NAMA</th>
+                      <th style="width: 220px;">UNSUR</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align: center; font-weight: 700;">1</td>
+                      <td><strong>Ketua</strong></td>
+                      <td><strong>Lathifatul Aulia, S.Si., M.Si.</strong></td>
+                      <td><span class="org-badge-unsur unsur-dosen">Dosen</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center; font-weight: 700;">2</td>
+                      <td><strong>Sekertaris</strong></td>
+                      <td><strong>Muthmainnah Barakatun Khoomisati, S.Psi.</strong></td>
+                      <td><span class="org-badge-unsur unsur-tendik">Tenaga Kependidikan</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">3</td>
+                      <td>Anggota</td>
+                      <td>Rowiyani, S.M., M.M.</td>
+                      <td><span class="org-badge-unsur unsur-dosen">Dosen</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">4</td>
+                      <td>Anggota</td>
+                      <td>Wulan Bhakti Pertiwi, S.Si., M.Si.</td>
+                      <td><span class="org-badge-unsur unsur-dosen">Dosen</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">5</td>
+                      <td>Anggota</td>
+                      <td>Lailatul Qoderia, S.E.</td>
+                      <td><span class="org-badge-unsur unsur-tendik">Tenaga Kependidikan</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">6</td>
+                      <td>Anggota</td>
+                      <td>Hapsari Dewi Saraswati, S.Hum.</td>
+                      <td><span class="org-badge-unsur unsur-tendik">Tenaga Kependidikan</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">7</td>
+                      <td>Anggota</td>
+                      <td>Daffa Haidar Maulana</td>
+                      <td><span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">8</td>
+                      <td>Anggota</td>
+                      <td>Qurota A'yun</td>
+                      <td><span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">9</td>
+                      <td>Anggota</td>
+                      <td>Niswah Al Adawiyah Shofa</td>
+                      <td><span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">10</td>
+                      <td>Anggota</td>
+                      <td>Muhammad Mukti Ash Shiddiqi</td>
+                      <td><span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">11</td>
+                      <td>Anggota</td>
+                      <td>Risma Anita Sari</td>
+                      <td><span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">12</td>
+                      <td>Anggota</td>
+                      <td>Avreyra Putri Helmiya</td>
+                      <td><span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">13</td>
+                      <td>Anggota</td>
+                      <td>Syafiq Ahmad Annaufal</td>
+                      <td><span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">14</td>
+                      <td>Anggota</td>
+                      <td>Rhosid Susilo Nugroho</td>
+                      <td><span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;">15</td>
+                      <td>Anggota</td>
+                      <td>Maelani Solehah</td>
+                      <td><span class="org-badge-unsur unsur-mahasiswa">Mahasiswa</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+
         </div>
       </div>
 
